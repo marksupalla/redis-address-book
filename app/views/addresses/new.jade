@@ -1,0 +1,22 @@
+extends ../shared/template
+block content
+  h2 New Address
+  .row
+    .col-xs-6
+      form(role='form', method='post', action='/register')
+        .form-group
+          label(for='email') Email
+          input.form-control#Name(type='name', name='name', autofocus=true) 
+        .form-group
+          label(for='color') Color
+          input.form-control#color(type='name', name='color') 
+        .form-group
+          label(for='color') Twitter
+          input.form-control#twitter(type='name', name='color') 
+        .form-group
+          label(for='color') Facebook
+          input.form-control#facebook(type='name', name='color') 
+        button.btn-primary(type='submit') Add Address
+    .col-xs-6
+block scripts
+  script(src='/js/user/home.js')
